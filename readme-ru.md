@@ -20,8 +20,10 @@ Multiverse [English](https://github.com/slexx1234/multiverse-flextype-theme/blob
 3. Переместите файоы из папки `site/themes/multiverse/multiverse-plugin` в `site/plugins/multiverse`
 4. Создайте запись с форматом `Multiserve Home`, настройте все поля по вашему усмотрению,
 сделайте её главной записью в настройках контента.
-6. Создайте одну или более запись в формате `Multiserve Portfolio Item`.
-7. Откройте файл `/site/config/settings.yaml` и измените значение `theme:` на `multiverse`. Так же
+5. Создайте одну или более запись в формате `Multiserve Portfolio Item` внутри записи с идентификатором `portfolio` и форматом `Multiverse Portfolio`
+6. Откройте файл `/site/config/settings.yaml` и измените значение `theme:` на `multiverse`. Так же
 вы можете это сделать в настройках админ панели сайта.
-8. Наслождайтесь вашим творением, вы большой молодец!
+7. Наслождайтесь вашим творением, вы большой молодец!
+
+Если что то не получается, вы не растрайвайтесь! Посмотрите на [этот репозиторий](https://github.com/slexx1234/multiverse-flextype-demo), тут всё настроено.
 

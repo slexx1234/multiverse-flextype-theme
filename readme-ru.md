@@ -17,7 +17,8 @@ Multiverse [English](https://github.com/slexx1234/multiverse-flextype-theme/blob
 
 1. Скопируйте все файлы из этого репозитория в папку `site/themes/multiverse`
 2. Переместите файлы из папки `site/themes/multiverse/fieldsets` в `site/fieldsets`
-3. Переместите файоы из папки `site/themes/multiverse/multiverse-plugin` в `site/plugins/multiverse`
+3. Переместите файлы из папки `site/themes/multiverse/multiverse-plugin` в `site/plugins/multiverse`.
+Этот плагин добовляет локализацию для набора сущностей темы.
 4. Создайте запись с форматом `Multiserve Home`, настройте все поля по вашему усмотрению,
 сделайте её главной записью в настройках контента.
 6. Создайте одну или более запись в формате `Multiserve Portfolio Item`.

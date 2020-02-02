@@ -1,0 +1,17 @@
+title: Multiverse Portfolio Item
+default_field: title
+icon: 'fas fa-image'
+sections:
+  main:
+    title: Main
+    fields:
+      title:
+        title: Title
+        type: text
+      description:
+        title: Description
+        type: textarea
+      image:
+        title: Image
+        type: media_select
+

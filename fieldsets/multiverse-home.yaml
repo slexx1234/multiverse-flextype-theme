@@ -1,0 +1,97 @@
+title: Multiverse Home
+default_field: title
+icon: 'fas fa-home'
+sections:
+  main:
+    title: Main
+    fields:
+      title:
+        title: Title
+        type: text
+        default: Multiverse
+  header:
+    title: Header
+    fields:
+      header_title_strong:
+        title: Title (strong)
+        type: text
+        size: 6/12
+        default: MULTIVERSE
+      header_title_light:
+        title: Title (light)
+        type: text
+        size: 6/12
+        default: BY HTML5 UP
+      header_about:
+        title: About button
+        type: text
+        default: About
+  footer:
+    title: Footer
+    fields:
+      footer_title:
+        title: Title
+        type: text
+        default: Magna feugiat sed adipiscing
+      footer_description:
+        title: Description
+        type: textarea
+      footer_copyright:
+        title: Copyright
+        type: text
+        default: '&copy; Unttled. Design: HTML5 UP.'
+  social:
+    title: Social Profiles
+    fields:
+      social_title:
+        title: Title
+        type: text
+      social_twitter:
+        title: Twitter
+        type: text
+      social_facebook:
+        title: Facebook
+        type: text
+      social_instagram:
+        title: Instagram
+        type: text
+      social_github:
+        title: GitHub
+        type: text
+      social_dribbble:
+        title: Dribbble
+        type: text
+      social_linkedin:
+        title: LinkedIn
+        type: text
+  about:
+    title: About form
+    fields:
+      about_title:
+        title: Title
+        type: text
+        default: Get in touch
+      about_name:
+        title: Name field
+        type: text
+        default: Name
+      about_email:
+        title: Email field
+        type: text
+        default: Email
+      about_message:
+        title: Message field
+        type: text
+        default: Message
+      about_send:
+        title: Send button
+        type: text
+        default: Send
+      about_reset:
+        title: Reset button
+        type: text
+        default: Reset
+
+
+
+

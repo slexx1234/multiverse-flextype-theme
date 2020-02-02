@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Multiverse by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="{{ registry.settings.locale }}">
+	<head>
+		{% block head %}
+			<meta charset="{{ registry.settings.charset|lower }}">
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+			<meta name="description" content="{% if entry.description %}{{ entry.description }}{% else %}{{ registry.settings.description }}{% endif %}">
+			<meta name="keywords" content="{% if entry.keywords %}{{ entry.keywords }}{% else %}{{ registry.settings.keywords }}{% endif %}">
+			<meta name="robots" content="{% if entry.robots %}{{ entry.robots }}{% else %}{{ registry.settings.robots }}{% endif %}">
+			<meta name="generator" content="Powered by Flextype {{ FLEXTYPE_VERSION }}" />
+			{% do emitter.emit('onThemeMeta') %}
+
+			<title>{% if entry.title %}{{ entry.title|e('html') }} | {% endif %}{{ registry.settings.title|e('html') }}</title>
+
+			{% set main_css = base_url() ~ '/site/themes/' ~ registry.settings.theme ~ '/assets/css/main.css' %}
+			{% do assets.add('css', main_css, 'site', 1) %}
+			{% for assets_site in assets.get('css', 'site') %}
+				{% for assets_by_priorities in assets_site %}
+					<link href="{{ assets_by_priorities.asset }}" rel="stylesheet">
+				{% endfor %}
+			{% endfor %}
+
+			<noscript>
+				<link rel="stylesheet" href="{{ base_url() ~ '/site/themes/' ~ registry.settings.theme ~ '/assets/css/noscript.css' }}">
+			</noscript>
+
+			{% do emitter.emit('onThemeHeader') %}
+			{{ snippets.exec('google-analytics')|raw }}
+		{% endblock %}
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header">
+				<h1><a href="/"><strong>{{ entry.header_title_strong|e('html') }}</strong> {{ entry.header_title_light|e('html') }}</a></h1>
+				<nav>
+					<ul>
+						<li><a href="#footer" class="icon solid fa-info-circle">{{ entry.header_about|e('html') }}</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+				{% set items = entries.fetch('', {
+				    'where': {
+						'key': 'fieldset',
+						'expr': 'eq',
+						'value': 'multiverse-portfolio'
+					}
+				}) %}
+
+				{% for item in items %}
+					<article class="thumb">
+						<img src="">
+						<a href="{{ base_url() }}/image/{{ item.slug }}/{{ item.image }}" class="image">
+							<img src="{{ base_url() }}/image/{{ item.slug }}/{{ item.image }}?dpr=2&w=360&h=247&q=60" alt="" />
+						</a>
+						<h2>{{ item.title|e('html') }}</h2>
+						<p>{{ item.description|e('html') }}</p>
+					</article>
+				{% endfor %}
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer" class="panel">
+				<div class="inner split">
+					<div>
+						<section>
+							<h2>{{ entry.footer_title|e('html') }}</h2>
+							{% if entry.footer_description %}
+								<p>{{ entry.footer_description|e('html') }}</p>
+							{% endif %}
+						</section>
+						<section>
+							<h2>{{ entry.social_title }}</h2>
+							<ul class="icons">
+								{% if entry.social_twitter %}
+									<li><a href="{{ entry.social_twitter|e('html') }}" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								{% endif %}
+								{% if entry.social_facebook %}
+									<li><a href="{{ entry.social_facebook|e('html') }}" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								{% endif %}
+								{% if entry.social_instagram %}
+									<li><a href="{{ entry.social_instagram|e('html') }}" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								{% endif %}
+								{% if entry.social_github %}
+									<li><a href="{{ entry.social_github|e('html') }}" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								{% endif %}
+								{% if entry.social_dribbble %}
+									<li><a href="{{ entry.social_dribbble|e('html') }}" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+								{% endif %}
+								{% if entry.social_linkedin %}
+									<li><a href="{{ entry.social_linkedin|e('html') }}" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								{% endif %}
+							</ul>
+						</section>
+						<p class="copyright">{{ entry.footer_copytight|e('html') }}</p>
+					</div>
+					<div>
+						<section>
+							<h2>{{ entry.about_title|e('html') }}</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="{{ entry.about_name|e('html') }}" />
+									</div>
+									<div class="field half">
+										<input type="text" name="email" id="email" placeholder="{{ entry.about_email|e('html') }}" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" rows="4" placeholder="{{ entry.about_message|e('html') }}"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="{{ entry.about_send|e('html') }}" class="primary" /></li>
+									<li><input type="reset" value="{{ entry.about_reset|e('html') }}" /></li>
+								</ul>
+							</form>
+						</section>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		{% do assets.add('js', base_url() ~ '/site/themes/' ~ registry.settings.theme ~ '/assets/js/jquery.min.js', 'site', 1) %}
+		{% do assets.add('js', base_url() ~ '/site/themes/' ~ registry.settings.theme ~ '/assets/js/jquery.poptrox.min.js', 'site', 1) %}
+		{% do assets.add('js', base_url() ~ '/site/themes/' ~ registry.settings.theme ~ '/assets/js/browser.min.js', 'site', 1) %}
+		{% do assets.add('js', base_url() ~ '/site/themes/' ~ registry.settings.theme ~ '/assets/js/breakpoints.min.js', 'site', 1) %}
+		{% do assets.add('js', base_url() ~ '/site/themes/' ~ registry.settings.theme ~ '/assets/js/util.js', 'site', 1) %}
+		{% do assets.add('js', base_url() ~ '/site/themes/' ~ registry.settings.theme ~ '/assets/js/main.js', 'site', 1) %}
+		{% for assets_site in assets.get('js', 'site') %}
+			{% for assets_by_priorities in assets_site %}
+				<script src="{{ assets_by_priorities.asset }}"></script>
+			{% endfor %}
+		{% endfor %}
+
+		{% do emitter.emit('onThemeTail') %}
+	</body>
+</html>

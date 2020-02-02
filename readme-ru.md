@@ -4,6 +4,8 @@ Multiverse [English](https://github.com/slexx1234/multiverse-flextype-theme/blob
 Модерн тема портфолио. Адаптация темы [Multiverse](https://html5up.net/multiverse) от
 [HTML5UP](https://html5up.net/) для [CMS Flextype](https://flextype.org).
 
+Скриншот [здесь](https://github.com/slexx1234/multiverse-flextype-theme/blob/master/screenshot.png).
+
 Извините, форма обратной связи не работает. Я не смог найти плагин для её реализации, я обещаю я
 займусь этой проблемой в ближайшем времени~~, но это не точно~~. А так пользуйтесь темой 
 на здоровье, мне не жалко.

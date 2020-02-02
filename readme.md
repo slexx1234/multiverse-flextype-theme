@@ -4,7 +4,10 @@ Multiverse [Русский](https://github.com/slexx1234/multiverse-flextype-the
 Theme for modern portfolio. Adaptation [Multiverse](https://html5up.net/multiverse) theme by
 [HTML5UP](https://html5up.net/) to [CMS Flextype](https://flextype.org).
 
+Screenshot [here](https://github.com/slexx1234/multiverse-flextype-theme/blob/master/screenshot.png).
+
 Sorry, about form does not work. I fixed this problem in soon time.
+
 Sorry, i have very bad english, i want to speak correct english.
 
 ## Install 

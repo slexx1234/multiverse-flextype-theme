@@ -17,7 +17,8 @@ Sorry, i have very bad english, i want to speak correct english.
 
 1. Copy all files from this repository to folder `site/themes/multiverse`
 2. Move files from folder `site/themes/multiverse/fieldsets` to folder `site/fieldsets`
-3. Create entry with the format `Multiserve Home`, make it the main entry in the content settings.
-4. Create one or more entries with the format `Multiserve Portfolio Item`.
-5. Go to `/site/config/settings.yaml` and update theme: setting with your theme name. Alternative go to Settings in the Admin panel and switch theme.
-6. Enjoy your creation!
+3. Move files from folder `site/themes/multiverse/multiverse-plugin` to folder `site/plugins/multiverse`
+4. Create entry with the format `Multiserve Home`, make it the main entry in the content settings.
+5. Create one or more entries with the format `Multiserve Portfolio Item`.
+6. Go to `/site/config/settings.yaml` and update theme: setting with your theme name. Alternative go to Settings in the Admin panel and switch theme.
+7. Enjoy your creation!

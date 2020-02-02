@@ -1,0 +1,11 @@
+name: Multiserve Localization
+version: 1.0.0
+description: Localization plugin for multiverse theme
+icon: fas fa-language
+author:
+  name: Slexx1234
+  email: slexx1234@gmail.com
+  url: https://slexx1234.netlify.com
+homepage: https://github.com/slexx1234/multiverse-flextype-theme
+bugs: https://github.com/slexx1234/multiverse-flextype-theme/issues
+license: MIT

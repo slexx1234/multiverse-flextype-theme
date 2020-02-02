@@ -3,48 +3,48 @@ default_field: title
 icon: 'fas fa-home'
 sections:
   main:
-    title: Main
+    title: multiverse_main
     fields:
       title:
-        title: Title
+        title: multiverse_main_title
         type: text
         default: Multiverse
   header:
-    title: Header
+    title: multiverse_header
     fields:
       header_title_strong:
-        title: Title (strong)
+        title: multiverse_header_title_strong
         type: text
         size: 6/12
         default: MULTIVERSE
       header_title_light:
-        title: Title (light)
+        title: multiverse_header_title_light
         type: text
         size: 6/12
         default: BY HTML5 UP
       header_about:
-        title: About button
+        title: multiverse_header_about
         type: text
         default: About
   footer:
-    title: Footer
+    title: multiverse_footer
     fields:
       footer_title:
-        title: Title
+        title: multiverse_footer_title
         type: text
         default: Magna feugiat sed adipiscing
       footer_description:
-        title: Description
+        title: multiverse_footer_description
         type: textarea
       footer_copyright:
-        title: Copyright
+        title: multiverse_footer_copyright
         type: text
         default: '&copy; Unttled. Design: HTML5 UP.'
   social:
-    title: Social Profiles
+    title: multiverse_social
     fields:
       social_title:
-        title: Title
+        title: multiverse_social_title
         type: text
       social_twitter:
         title: Twitter
@@ -65,30 +65,30 @@ sections:
         title: LinkedIn
         type: text
   about:
-    title: About form
+    title: multiverse_about
     fields:
       about_title:
-        title: Title
+        title: multiverse_about_title
         type: text
         default: Get in touch
       about_name:
-        title: Name field
+        title: multiverse_about_name
         type: text
         default: Name
       about_email:
-        title: Email field
+        title: multiverse_about_email
         type: text
         default: Email
       about_message:
-        title: Message field
+        title: multiverse_about_message
         type: text
         default: Message
       about_send:
-        title: Send button
+        title: multiverse_about_send
         type: text
         default: Send
       about_reset:
-        title: Reset button
+        title: multiverse_about_reset
         type: text
         default: Reset
 

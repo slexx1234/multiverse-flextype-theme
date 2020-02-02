@@ -17,10 +17,11 @@ Multiverse [English](https://github.com/slexx1234/multiverse-flextype-theme/blob
 
 1. Скопируйте все файлы из этого репозитория в папку `site/themes/multiverse`
 2. Переместите файлы из папки `site/themes/multiverse/fieldsets` в `site/fieldsets`
-3. Создайте запись с форматом `Multiserve Home`, настройте все поля по вашему усмотрению,
+3. Переместите файоы из папки `site/themes/multiverse/multiverse-plugin` в `site/plugins/multiverse`
+4. Создайте запись с форматом `Multiserve Home`, настройте все поля по вашему усмотрению,
 сделайте её главной записью в настройках контента.
-4. Создайте одну или более запись в формате `Multiserve Portfolio Item`.
-5. Откройте файл `/site/config/settings.yaml` и измените значение `theme:` на `multiverse`. Так же
+6. Создайте одну или более запись в формате `Multiserve Portfolio Item`.
+7. Откройте файл `/site/config/settings.yaml` и измените значение `theme:` на `multiverse`. Так же
 вы можете это сделать в настройках админ панели сайта.
-6. Наслождайтесь вашим творением, вы большой молодец!
+8. Наслождайтесь вашим творением, вы большой молодец!
 

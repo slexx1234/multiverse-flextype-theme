@@ -1,0 +1,28 @@
+multiverse_main: Main
+multiverse_main_title: Title
+
+multiverse_header: Header
+multiverse_header_title_strong: Title (strong)
+multiverse_header_title_light: Title (light)
+multiverse_header_about: About button
+
+multiverse_footer: Footer
+multiverse_footer_title: Title
+multiverse_footer_description: Description
+multiverse_footer_copyright: Copyright
+
+multiverse_social: Social Profiles
+multiverse_social_title: Title
+
+multiverse_about: About form
+multiverse_about_title: Title
+multiverse_about_name: Name field
+multiverse_about_email: Email field
+multiverse_about_message: Message field
+multiverse_about_send: Send button
+multiverse_about_reset: Reset button
+
+multiverse_portfolio_main: Main
+multiverse_portfolio_title: Title
+multiverse_portfolio_description: Description
+multiverse_portfolio_image: Image

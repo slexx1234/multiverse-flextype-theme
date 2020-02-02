@@ -1,0 +1,28 @@
+multiverse_main: Основное
+multiverse_main_title: Заголовок страницы
+
+multiverse_header: Шапка
+multiverse_header_title_strong: Заголовок (жирным)
+multiverse_header_title_light: Заголовок (тонким)
+multiverse_header_about: Текст кнопки "Обратная связь"
+
+multiverse_footer: Подвал
+multiverse_footer_title: Заголовок
+multiverse_footer_description: Описание
+multiverse_footer_copyright: Авторские права
+
+multiverse_social: Профили в соц. сетях
+multiverse_social_title: Заголовок
+
+multiverse_about: Форма обратной связи
+multiverse_about_title: Заголовок
+multiverse_about_name: Текст поля "Имя"
+multiverse_about_email: Текст поля "Email"
+multiverse_about_message: Текст поля "Сообщение"
+multiverse_about_send: Текст кнопки отправки
+multiverse_about_reset: Текст кнопки сброса
+
+multiverse_portfolio_main: Основное
+multiverse_portfolio_title: Название
+multiverse_portfolio_description: Описание
+multiverse_portfolio_image: Изображение

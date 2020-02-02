@@ -91,6 +91,22 @@ sections:
         title: multiverse_about_reset
         type: text
         default: Reset
+  settings:
+    title: admin_settings
+    fields:
+      template:
+        title: admin_template
+        type: template_select
+        size: 4/12
+      visibility:
+        title: admin_visibility
+        type: visibility_select
+        size: 4/12
+      routable:
+        title: admin_routable
+        type: routable_select
+        size: 4/12
+
 
 
 

@@ -48,13 +48,7 @@
 
 			<!-- Main -->
 			<div id="main">
-				{% set items = entries.fetch('', {
-				    'where': {
-						'key': 'fieldset',
-						'expr': 'eq',
-						'value': 'multiverse-portfolio'
-					}
-				}) %}
+				{% set items = entries.fetch('portfolio', {}) %}
 
 				{% for item in items %}
 					<article class="thumb">
